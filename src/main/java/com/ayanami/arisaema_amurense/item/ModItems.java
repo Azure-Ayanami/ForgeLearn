@@ -11,9 +11,24 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Arisaema_amurense.MOD_ID);
 
+    //叶片
     public static final RegistryObject<Item> SCALE_LEAF = ITEMS.register("scale_leaf",
             () -> new Item(new Item.Properties()));
-
+    //根茎
+    public static final RegistryObject<Item> TUBER = ITEMS.register("tuber",
+            () -> new Item(new Item.Properties()));
+    //花朵
+    public static final RegistryObject<Item> SPATHE = ITEMS.register("spathe",
+            () -> new Item(new Item.Properties()));
+    //果子
+    public static final RegistryObject<Item> BERRY = ITEMS.register("berry",
+            () -> new Item(new Item.Properties()));
+    //本体
+    public static final RegistryObject<Item> ARISAEMA_AMURENSE = ITEMS.register("arisaema_amurense",
+            () -> new Item(new Item.Properties()));
+    //干制版本
+    public static final RegistryObject<Item> ARISAEMA_AMURENSE_DRIED = ITEMS.register("arisaema_amurense_dried",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -1,6 +1,7 @@
 package com.ayanami.arisaema_amurense.item;
 
 import com.ayanami.arisaema_amurense.Arisaema_amurense;
+import com.ayanami.arisaema_amurense.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +19,12 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.arisaema_amurense_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.SCALE_LEAF.get());
+                        pOutput.accept(ModItems.TUBER.get());
+                        pOutput.accept(ModItems.SPATHE.get());
+                        pOutput.accept(ModItems.BERRY.get());
+                        pOutput.accept(ModBlocks.SCALE_LEAF_BLOCK.get());
+                        pOutput.accept(ModItems.ARISAEMA_AMURENSE.get());
+                        pOutput.accept(ModItems.ARISAEMA_AMURENSE_DRIED.get());
                     })
                     .build());
 
