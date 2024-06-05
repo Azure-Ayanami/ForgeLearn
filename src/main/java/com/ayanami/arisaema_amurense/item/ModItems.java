@@ -29,6 +29,9 @@ public class ModItems {
     //干制版本
     public static final RegistryObject<Item> ARISAEMA_AMURENSE_DRIED = ITEMS.register("arisaema_amurense_dried",
             () -> new Item(new Item.Properties()));
+    //熔炉烤制版本
+    public static final RegistryObject<Item> ARISAEMA_AMURENSE_COOKED = ITEMS.register("arisaema_amurense_cooked",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

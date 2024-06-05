@@ -25,6 +25,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SCALE_LEAF_BLOCK.get());
                         pOutput.accept(ModItems.ARISAEMA_AMURENSE.get());
                         pOutput.accept(ModItems.ARISAEMA_AMURENSE_DRIED.get());
+                        pOutput.accept(ModItems.ARISAEMA_AMURENSE_COOKED.get());
                     })
                     .build());
 
