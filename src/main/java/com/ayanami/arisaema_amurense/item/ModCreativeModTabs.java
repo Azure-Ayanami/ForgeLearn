@@ -26,6 +26,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.ARISAEMA_AMURENSE.get());
                         pOutput.accept(ModItems.ARISAEMA_AMURENSE_DRIED.get());
                         pOutput.accept(ModItems.ARISAEMA_AMURENSE_COOKED.get());
+                        pOutput.accept(ModItems.RAPHIDES.get());
                     })
                     .build());
 
