@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "arisaema_amurense:item/scale_leaf"
-  }
-}

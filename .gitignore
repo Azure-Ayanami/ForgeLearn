@@ -1,3 +1,6 @@
 /out/
 /run/
 /run-data/
+/build/
+/.gradle/
+/.idea/
