@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scale_leaf": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "araceae:scale_leaf"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "araceae:scale_leaf_from_smelting_scale_leaf"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_scale_leaf",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "araceae:scale_leaf_from_smelting_scale_leaf"
+    ]
+  },
+  "sends_telemetry_event": false
+}
