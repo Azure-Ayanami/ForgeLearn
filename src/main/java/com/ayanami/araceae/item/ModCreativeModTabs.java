@@ -15,18 +15,19 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Araceae.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> ARACEAE_TAB = CREATIVE_MODE_TABS.register("araceae_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SCALE_LEAF.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ARACEAE.get()))
                     .title(Component.translatable("creativetab.araceae_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.SCALE_LEAF.get());
-                        pOutput.accept(ModItems.ARACEAE_TUBER.get());
-                        pOutput.accept(ModItems.SPATHE.get());
-                        pOutput.accept(ModItems.ARACEAE_BERRY.get());
-                        pOutput.accept(ModBlocks.SCALE_LEAF_BLOCK.get());
                         pOutput.accept(ModItems.ARACEAE.get());
-                        pOutput.accept(ModItems.ARACEAE_DRIED.get());
-                        pOutput.accept(ModItems.ARACEAE_COOKED.get());
-                        pOutput.accept(ModItems.RAPHIDES.get());
+                        pOutput.accept(ModItems.AMORPHOPHALLUS_TITANUM.get());
+                        pOutput.accept(ModItems.ASTEROSTIGMA.get());
+                        pOutput.accept(ModItems.PINELLIA.get());
+                        pOutput.accept(ModItems.DRACONTIUM.get());
+                        pOutput.accept(ModItems.LEMNA.get());
+                        pOutput.accept(ModItems.MONSTERA.get());
+                        pOutput.accept(ModItems.AQUATICUM.get());
+                        pOutput.accept(ModItems.ACAULE.get());
+                        pOutput.accept(ModItems.ZAMIIFOLIA.get());
                     })
                     .build());
 

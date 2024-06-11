@@ -17,8 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.SCALE_LEAF);
-        simpleItem(ModItems.ARACEAE_TUBER);
+        simpleItem(ModItems.ARACEAE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

@@ -25,5 +25,30 @@ public class ModFoods {
     public static final FoodProperties ARACEAE = new FoodProperties.Builder().nutrition(2)
             .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
 
+    public static final FoodProperties AMORPHOPHALLUS_TITANUM = new FoodProperties.Builder().nutrition(5)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 60), 1.0f).build();
 
+    public static final FoodProperties ASTEROSTIGMA = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+
+    public static final FoodProperties PINELLIA = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+
+    public static final FoodProperties DRACONTIUM = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+
+    public static final FoodProperties LEMNA = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+
+    public static final FoodProperties MONSTERA = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+
+    public static final FoodProperties AQUATICUM = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+
+    public static final FoodProperties ACAULE = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+
+    public static final FoodProperties ZAMIIFOLIA = new FoodProperties.Builder().nutrition(2)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
 }

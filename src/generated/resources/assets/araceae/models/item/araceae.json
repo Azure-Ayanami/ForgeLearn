@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "araceae:item/tuber"
+    "layer0": "araceae:item/araceae"
   }
 }
