@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aquaticum": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "araceae:aquaticum"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "araceae:araceae_from_smelting_aquaticum"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_aquaticum",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "araceae:araceae_from_smelting_aquaticum"
+    ]
+  },
+  "sends_telemetry_event": false
+}

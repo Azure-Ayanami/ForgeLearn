@@ -17,7 +17,10 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
-    private static final List<ItemLike> ARACEAE_BREWABLES = List.of(ModItems.ARACEAE.get()
+    private static final List<ItemLike> ARACEAE_SMELTABLES = List.of(ModItems.ARACEAE.get(),
+            ModItems.ACAULE.get(), ModItems.AQUATICUM.get(), ModItems.ASTEROSTIGMA.get(),
+            ModItems.DRACONTIUM.get(), ModItems.ZAMIIFOLIA.get(), ModItems.PINELLIA.get(),
+            ModItems.MONSTERA.get(), ModItems.LEMNA.get(), ModItems.ARACEAE_TUBER.get()
             );
 
     public ModRecipeProvider(PackOutput pOutput){
@@ -26,16 +29,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-       // foodSmelting(pWriter, ARACEAE_BREWABLES, RecipeCategory.MISC, ModItems.SCALE_LEAF.get(), 0.25f, 200, "araceae");
+        foodSmelting(pWriter, ARACEAE_SMELTABLES, RecipeCategory.MISC, ModItems.ARACEAE.get(), 0.25f, 200, "araceae");
     }
 
 
     protected static void foodSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
-        arisaemaCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smelting");
+        araceaeCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smelting");
     }
 
 
-    protected static void arisaemaCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
+    protected static void araceaeCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         for(ItemLike itemLike : pIngredients) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemLike), pCategory, pResult,
                     pExperience, pCookingTime, pCookingSerializer)

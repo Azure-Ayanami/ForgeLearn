@@ -19,7 +19,6 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.araceae_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.ARACEAE.get());
-                        pOutput.accept(ModItems.AMORPHOPHALLUS_TITANUM.get());
                         pOutput.accept(ModItems.ASTEROSTIGMA.get());
                         pOutput.accept(ModItems.PINELLIA.get());
                         pOutput.accept(ModItems.DRACONTIUM.get());
@@ -28,6 +27,13 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.AQUATICUM.get());
                         pOutput.accept(ModItems.ACAULE.get());
                         pOutput.accept(ModItems.ZAMIIFOLIA.get());
+
+                        pOutput.accept(ModItems.ARACEAE_TUBER.get());
+                        pOutput.accept(ModItems.ARACEAE_TRIFOLIATE.get());
+                        pOutput.accept(ModItems.ARACEAE_SPATHE.get());
+                        pOutput.accept(ModItems.ARACEAE_ALKALOIDS.get());
+
+                        pOutput.accept(ModBlocks.AMORPHOPHALLUS_TITANUM_BLOCK.get());
                     })
                     .build());
 

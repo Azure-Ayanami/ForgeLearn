@@ -1,5 +1,19 @@
 {
   "item.araceae.araceae": "ARACEAE",
+  "item.araceae.amorphophallus_titanum": "Titan Arum",
+  "item.araceae.asterostigma": "Asterostigma",
+  "item.araceae.pinellia": "Pinellia",
+  "item.araceae.dracontium": "Dracontium",
+  "item.araceae.lemna": "Lemna",
+  "item.araceae.monstera": "Monstera",
+  "item.araceae.aquaticum": "Aquaticum",
+  "item.araceae.acaule": "Acaule",
+  "item.araceae.zamiifolia": "Zamiifolia",
+
+  "item.araceae.araceae_tuber": "Araceae Tuber",
+  "item.araceae.araceae_trifoliate": "Araceae Trifoliate",
+  "item.araceae.araceae_spathe": "Araceae Spathe",
+  "item.araceae.araceae_alkaloids": "Araceae Alkaloids",
 
   "creativetab.araceae_tab": "ARACEAE TAB"
 }

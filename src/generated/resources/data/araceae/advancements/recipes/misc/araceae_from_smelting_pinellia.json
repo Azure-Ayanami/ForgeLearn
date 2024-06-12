@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pinellia": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "araceae:pinellia"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "araceae:araceae_from_smelting_pinellia"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pinellia",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "araceae:araceae_from_smelting_pinellia"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_asterostigma": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "araceae:asterostigma"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "araceae:araceae_from_smelting_asterostigma"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_asterostigma",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "araceae:araceae_from_smelting_asterostigma"
+    ]
+  },
+  "sends_telemetry_event": false
+}
