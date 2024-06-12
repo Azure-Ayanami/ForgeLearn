@@ -1,10 +1,11 @@
 package com.ayanami.araceae.item;
 
+import com.ayanami.araceae.effect.ModEffects;
 import com.ayanami.araceae.effect.PlantAllergiesEffect;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 /*
@@ -20,35 +21,41 @@ import net.minecraft.world.food.FoodProperties;
 * */
 public class ModFoods {
 
-    private static final MobEffect PlantAllergiesEffect = new PlantAllergiesEffect(MobEffectCategory.HARMFUL, 12345678);
+    private static MobEffectInstance createPlantAllergiesEffect() {
+        return new MobEffectInstance(ModEffects.PLANT_ALLERGIES.get(), 1, 0, false, false, false);
+    }
 
     public static final FoodProperties ARACEAE = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties AMORPHOPHALLUS_TITANUM = new FoodProperties.Builder().nutrition(5)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 60), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties ASTEROSTIGMA = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties PINELLIA = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties DRACONTIUM = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties LEMNA = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties MONSTERA = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties AQUATICUM = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties ACAULE = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
 
     public static final FoodProperties ZAMIIFOLIA = new FoodProperties.Builder().nutrition(2)
-            .saturationMod(1.0f).effect(() -> new MobEffectInstance(PlantAllergiesEffect, 30), 1.0f).build();
+            .saturationMod(1.0f).effect(ModFoods::createPlantAllergiesEffect, 1.0f).build();
+
+    public static final FoodProperties TUBER = new FoodProperties.Builder().nutrition(4)
+            .saturationMod(1.0f).effect(() -> new MobEffectInstance(MobEffects.SATURATION, 15), 0.5f).build();
+
 }

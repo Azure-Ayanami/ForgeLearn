@@ -19,9 +19,8 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Araceae.MOD_ID);
 
-//    public static final RegistryObject<Block> SCALE_LEAF_BLOCK = registerBlock("scale_leaf_block",
-//        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-
+    public static final RegistryObject<Block> AMORPHOPHALLUS_TITANUM_BLOCK = registerBlock("amorphophallus_titanum_block",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM_BLOCK).sound(SoundType.SNOW)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "araceae:araceae_from_smelting_zamiifolia"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zamiifolia": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "araceae:zamiifolia"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_zamiifolia",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "araceae:araceae_from_smelting_zamiifolia"
+    ]
+  },
+  "sends_telemetry_event": false
+}

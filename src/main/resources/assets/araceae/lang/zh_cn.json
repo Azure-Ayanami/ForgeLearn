@@ -1,5 +1,19 @@
 {
   "item.araceae.araceae": "天南星",
+  "item.araceae.amorphophallus_titanum": "泰坦魔芋",
+  "item.araceae.asterostigma": "星柱芋",
+  "item.araceae.pinellia": "半夏",
+  "item.araceae.lemna": "浮萍",
+  "item.araceae.monstera": "龟背竹",
+  "item.araceae.dracontium": "龙莲",
+  "item.araceae.acaule": "花烛",
+  "item.araceae.aquaticum": "水金杖",
+  "item.araceae.zamiifolia": "金钱树",
+
+  "item.araceae.araceae_tuber": "天南星科块茎",
+  "item.araceae.araceae_trifoliate": "天南星科戟形叶",
+  "item.araceae.araceae_spathe": "天南星科佛焰苞",
+  "item.araceae.araceae_alkaloids": "天南星科生物碱",
 
   "creativetab.araceae_tab": "天南星科"
 }
