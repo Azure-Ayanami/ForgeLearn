@@ -10,7 +10,7 @@ import net.minecraft.tags.BlockTags;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> GROWABLE = tag("Growable");
+        public static final TagKey<Block> GROWABLE = tag("growable");
 
 
         private static TagKey<Block> tag(String name) {
@@ -19,7 +19,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> GROWABLE = tag("Growable");
+        public static final TagKey<Item> GROWABLE = tag("growable");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(Araceae.MOD_ID, name));

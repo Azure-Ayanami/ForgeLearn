@@ -22,7 +22,7 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         //合成表
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
+        //generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
 
         //纹理
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));

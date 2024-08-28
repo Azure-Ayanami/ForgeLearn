@@ -21,29 +21,11 @@ public class Araceae {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModEffects.register(modEventBus);
-
         ModPotions.register(modEventBus);
 
-    //    modEventBus.addListener(this::commonSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
-       // modEventBus.addListener(this::addCreative);
     }
-
-//    private void addCreative(BuildCreativeModeTabContentsEvent event){
-//        if(event.getTabKey() ==CreativeModeTabs.INGREDIENTS){
-//            event.accept(ModItems.SCALE_LEAF);
-//        }
-//    }
-
-//    public static void onLoggedIn (PlayerEvent.@NotNull PlayerLoggedInEvent event){
-//        var player = event.getEntity();
-//        player.sendSystemMessage(Component.translatable("欢迎使用天南星科模组"));
-//    }
-
 }
