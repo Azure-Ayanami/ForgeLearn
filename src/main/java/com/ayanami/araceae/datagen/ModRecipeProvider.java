@@ -18,9 +18,9 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> ARACEAE_SMELTABLES = List.of(ModItems.ARACEAE.get(),
-            ModItems.ACAULE.get(), ModItems.AQUATICUM.get(), ModItems.ASTEROSTIGMA.get(),
-            ModItems.DRACONTIUM.get(), ModItems.ZAMIIFOLIA.get(), ModItems.PINELLIA.get(),
-            ModItems.MONSTERA.get(), ModItems.LEMNA.get(), ModItems.ARACEAE_TUBER.get()
+            ModItems.ACAULE.get(), ModItems.AQUATICUM.get(), ModItems.AMORPHOPHALLUS_TITANUM.get(),
+            ModItems.ASTEROSTIGMA.get(),ModItems.DRACONTIUM.get(), ModItems.ZAMIIFOLIA.get(),
+            ModItems.PINELLIA.get(),ModItems.MONSTERA.get(), ModItems.LEMNA.get(), ModItems.ARACEAE_TUBER.get()
             );
 
     public ModRecipeProvider(PackOutput pOutput){

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lemna": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "araceae:lemna"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "araceae:araceae_from_smelting_lemna"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_lemna",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "araceae:araceae_from_smelting_lemna"
+    ]
+  },
+  "sends_telemetry_event": false
+}

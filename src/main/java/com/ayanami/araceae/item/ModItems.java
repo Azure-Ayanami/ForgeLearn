@@ -15,8 +15,8 @@ public class ModItems {
     //本体
     public static final RegistryObject<Item> ARACEAE = ITEMS.register("araceae",
             () -> new Item(new Item.Properties().food(ModFoods.ARACEAE)));
-//    public static final RegistryObject<Item> AMORPHOPHALLUS_TITANUM = ITEMS.register("amorphophallus_titanum",
-//            () -> new Item(new Item.Properties().food(ModFoods.AMORPHOPHALLUS_TITANUM)));
+    public static final RegistryObject<Item> AMORPHOPHALLUS_TITANUM = ITEMS.register("amorphophallus_titanum",
+            () -> new Item(new Item.Properties().food(ModFoods.AMORPHOPHALLUS_TITANUM)));
     public static final RegistryObject<Item> ASTEROSTIGMA = ITEMS.register("asterostigma",
             () -> new Item(new Item.Properties().food(ModFoods.ASTEROSTIGMA)));
     public static final RegistryObject<Item> PINELLIA = ITEMS.register("pinellia",
