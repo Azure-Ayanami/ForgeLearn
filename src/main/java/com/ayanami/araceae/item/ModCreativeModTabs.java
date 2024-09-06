@@ -36,6 +36,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.AMORPHOPHALLUS_TITANUM_BLOCK.get());
 
                         pOutput.accept(ModItems.ARACEAE_SWORD.get());
+                        pOutput.accept(ModItems.ASKALON.get());
                     })
                     .build());
 

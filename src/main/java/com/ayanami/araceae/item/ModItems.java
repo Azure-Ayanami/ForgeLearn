@@ -49,6 +49,9 @@ public class ModItems {
     public static final RegistryObject<Item> ARACEAE_SWORD = ITEMS.register("araceae_sword",
             () -> new SwordItem(ModToolTiers.ARACEAE, 3, 3, new Item.Properties()));
 
+    public static final RegistryObject<Item> ASKALON = ITEMS.register("askalon",
+            () -> new SwordItem(ModToolTiers.ARACEAE, 10, 1, new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

@@ -7,6 +7,8 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
 /*
 *@.nutrition(2)：这个食物项可以恢复2点饥饿值。
@@ -21,7 +23,8 @@ import net.minecraft.world.food.FoodProperties;
 * */
 public class ModFoods {
 
-    private static MobEffectInstance createPlantAllergiesEffect() {
+    @Contract(" -> new")
+    private static @NotNull MobEffectInstance createPlantAllergiesEffect() {
         return new MobEffectInstance(ModEffects.PLANT_ALLERGIES.get(), 1, 0, false, false, false);
     }
 

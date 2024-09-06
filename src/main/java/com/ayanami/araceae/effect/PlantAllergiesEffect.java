@@ -5,6 +5,7 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import org.jetbrains.annotations.NotNull;
 
 public class PlantAllergiesEffect extends MobEffect {
     public PlantAllergiesEffect(MobEffectCategory mobEffectCategory, int color) {
@@ -12,7 +13,7 @@ public class PlantAllergiesEffect extends MobEffect {
     }
 
     @Override
-    public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
+    public void applyEffectTick(@NotNull LivingEntity pLivingEntity, int pAmplifier) {
         if (!pLivingEntity.getCommandSenderWorld().isClientSide()) {
             pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, 0));
             pLivingEntity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 0));

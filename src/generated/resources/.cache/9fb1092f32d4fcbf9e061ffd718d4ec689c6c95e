@@ -1,5 +1,6 @@
-// 1.20.1	2024-08-28T18:53:35.5442259	Recipes
+// 1.20.1	2024-09-04T13:51:56.5309047	Recipes
 f231b1ffb080ae69e8a88ea6d77a884c814e929c data/araceae/advancements/recipes/misc/araceae_from_smelting_acaule.json
+4693d879168aba4dddecf10958198b3cc9dddbc4 data/araceae/advancements/recipes/misc/araceae_from_smelting_amorphophallus_titanum.json
 83b3d79774762ab7040b024dae18a81913c75544 data/araceae/advancements/recipes/misc/araceae_from_smelting_aquaticum.json
 d15805c5516d3f7814bbb15c06a156defb47285c data/araceae/advancements/recipes/misc/araceae_from_smelting_araceae.json
 d275aacf229d1217127f28d038ddaf1886597e8b data/araceae/advancements/recipes/misc/araceae_from_smelting_araceae_tuber.json
@@ -10,6 +11,7 @@ e4a3ffe78a00bc86710be262e6e0f634b9ea150c data/araceae/advancements/recipes/misc/
 4fd278646d3436b9f48862fd757594caaa863d92 data/araceae/advancements/recipes/misc/araceae_from_smelting_pinellia.json
 b7fe29d72e3558f3425d06655532d156cec7891c data/araceae/advancements/recipes/misc/araceae_from_smelting_zamiifolia.json
 ff920e5d605560ab1d6cb4fcc5e400e50eb126e1 data/araceae/recipes/araceae_from_smelting_acaule.json
+511e65d3f746b79b1ded8548cb063012a906d677 data/araceae/recipes/araceae_from_smelting_amorphophallus_titanum.json
 8eb859e55e1d03ba2bccaf7e3a072681e60fcd3b data/araceae/recipes/araceae_from_smelting_aquaticum.json
 dd0d817b29df9ed6b10bcfe77d82fb9787080c17 data/araceae/recipes/araceae_from_smelting_araceae.json
 3af889559ae205dcc2df3040725d529e07378121 data/araceae/recipes/araceae_from_smelting_araceae_tuber.json

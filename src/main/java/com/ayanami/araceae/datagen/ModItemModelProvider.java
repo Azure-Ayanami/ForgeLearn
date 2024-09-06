@@ -9,6 +9,7 @@ import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -18,10 +19,13 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.ARACEAE);
+        simpleItem(ModItems.ASKALON);
     }
 
-    private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
-        Araceae.LOGGER.info("数据生成");
+    private int logCounter = 0;
+    private ItemModelBuilder simpleItem(@NotNull RegistryObject<Item> item) {
+        logCounter++;
+        Araceae.LOGGER.info("数据生成 - 第{}次", logCounter);
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Araceae.MOD_ID, "item/" + item.getId().getPath()));
